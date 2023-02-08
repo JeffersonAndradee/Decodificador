@@ -1,0 +1,201 @@
+* {
+    font-family: 'Inter';
+}
+
+body {
+    background: #F3F5FC;
+    margin: 50px;
+}
+
+header {
+    width: 800px;
+    display: flex;
+    margin-left: 30px;
+}
+
+.logo {
+    margin: 40px 0 40px 40px;
+    display: inline-flex;
+
+}
+
+textarea {
+    font-family: 'Inter';
+    resize: none;
+    text-transform: lowercase;
+    background: #F3F5FC;
+}
+
+button {
+    cursor: pointer;
+}
+
+
+.texto-criptografia {
+
+    padding: 40px 40px 10px 50px;
+    color: #0A3871;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 150%;
+    border: 1px solid #0A3871;
+    border-radius: 20px;
+    outline: none;
+}
+
+.texto-criptografado {
+    position: absolute;
+    width: 400px;
+    height: 600px;
+    left: 900px;
+    top: 40px;
+    padding: 50px;
+    border: none;
+    color: #0A3871;
+    background: white;
+    border-radius: 32px;
+    box-shadow: 3px 3px 20px 3px rgb(0 0 0 / 8%);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 150%;
+    background-image: url(./boneco.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 70%;
+    background-position-y: 30%;
+    outline: none;
+    
+}
+
+.texto-criptografia::placeholder {
+    position: absolute;
+    top: 40px;
+    left: 55px;
+    color: #0A3871;
+}
+
+.btn-copiar {
+    box-sizing: border-box;
+    
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 24px;
+    margin-left: 55px;
+    gap: 8px;
+    
+    position: absolute;
+    width: 336px;
+    height: 67px;
+    left: 930px;
+    top: 778px;   
+    
+    border: 1px solid #0A3871;
+    border-radius: 24px;
+
+    background-color: #D8DFE8;
+
+    font-style: normal;
+    font-weight: 400;
+    justify-content: center;
+    align-items: center;
+    color: #0A3871;
+}
+
+p {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
+    color: #495057;
+}
+
+.botoes, .aviso-escrita {
+    padding-top: 10px;
+    padding-left: 80px;
+    margin-bottom: 15px;
+    display: flex;
+    gap: 10px;
+}
+
+
+.aviso-escrita {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 8px;
+    margin-top: 10px;
+}
+
+.botoes {
+    margin: 10px 0;
+}
+
+.botao-criptografar {
+    font-family: 'Inter';
+    width: 328px;
+    height: 67px;
+    padding: 24px;
+    background-color: #0A3871;
+    color: white;
+    border: 1px solid black;
+    border-radius: 24px;
+}
+
+.botao-descriptografar {
+    width: 328px;
+    height: 67px;
+   
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    padding: 24px;
+    background: #D8DFE8;
+    border: 1px solid #0A3871;
+    border-radius: 24px;
+    color: #0A3871;
+}
+
+footer {
+    margin-top: 35px;
+}
+
+.rodape {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 24px;
+    background-color: #0A3871;
+
+}
+
+footer p {
+    color: white;
+}
+
+.rodape-1 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-left: 90px;
+}
+
+.rodape-2 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 2rem;
+    padding-right: 100px;
+}
+
+.frame-icons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 2rem;
+    gap: 1rem;
+}

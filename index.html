@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="./reset.css">
+    <link rel="stylesheet" href="./style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+
+    <title>Decodificador Challenge</title>
+</head>
+
+    <body>
+        
+        <div class="logo">
+            <header>
+                <img src="alura-logo.svg" alt="Logo da Alura">
+            </header>
+        </div>
+
+        <main>
+            <div class="container">
+                <section class="area-texto">
+                    
+                    <textarea class="texto-criptografia" rows="10" cols="40" placeholder="Digite seu texto..."></textarea>
+                    
+                    <div class="txt-cript">
+                        <textarea class="texto-criptografado"></textarea>
+
+                        <button class="btn-copiar" onclick="copiarTexto()">Copiar</button>
+                    </div>
+
+                </section>
+
+            
+                <section class="btn-aviso">
+                        <p class="aviso-escrita"><img src="./exclamacao.svg">Apenas letras minúsculas e sem acento.</p>
+                        
+                        <div class="botoes">
+                            <button class="botao-criptografar" onclick="btnEncriptar()">Criptografar</button>
+                            <button class="botao-descriptografar" onclick="btnDesencriptar()">Descriptografar</button>
+                        </div>
+                </section>
+            </div>
+        </main>
+        
+        <footer class="rodape">
+            <div class="rodape-1">
+                <p>&copy; Oracle Next Education + Alura</p>
+            </div> 
+
+            <div class="rodape-2">
+                <p>Jefferson Cássio</p>
+        
+                <div class="frame-icons">
+                    <div class="icon">
+                        <a href="https://github.com/JeffersonAndradee" alt="Jefferson's Github Profile" target="_blank">
+                            <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M16.3035 4C9.50583 4 4 9.50583 4 16.3035C4 21.7478 7.52188 26.3463 12.4125 27.9765C13.0277 28.0842 13.2584 27.715 13.2584 27.3921C13.2584 27.0999 13.243 26.131 13.243 25.1005C10.1518 25.6696 9.35203 24.347 9.10596 23.6549C8.96755 23.3012 8.36775 22.2092 7.84485 21.917C7.41423 21.6863 6.79905 21.1173 7.82947 21.1019C8.79837 21.0865 9.49045 21.9939 9.72114 22.363C10.8285 24.2239 12.5971 23.701 13.3045 23.3781C13.4122 22.5783 13.7352 22.04 14.0889 21.7325C11.3514 21.4249 8.49079 20.3637 8.49079 15.6576C8.49079 14.3196 8.96755 13.2123 9.7519 12.351C9.62886 12.0434 9.19824 10.7823 9.87493 9.09058C9.87493 9.09058 10.9054 8.76762 13.2584 10.3517C14.2427 10.0749 15.2885 9.93645 16.3343 9.93645C17.3801 9.93645 18.4259 10.0749 19.4102 10.3517C21.7632 8.75224 22.7936 9.09058 22.7936 9.09058C23.4703 10.7823 23.0397 12.0434 22.9167 12.351C23.701 13.2123 24.1778 14.3042 24.1778 15.6576C24.1778 20.3791 21.3018 21.4249 18.5643 21.7325C19.0103 22.1169 19.3948 22.8552 19.3948 24.0086C19.3948 25.6542 19.3794 26.9768 19.3794 27.3921C19.3794 27.715 19.6101 28.0995 20.2253 27.9765C22.6679 27.1522 24.7904 25.5825 26.2941 23.4884C27.7976 21.3943 28.6066 18.8815 28.607 16.3035C28.607 9.50583 23.1012 4 16.3035 4Z" fill="white"></path>
+                            </svg>
+                        </a>
+                    </div>
+                    
+                    <div class="icon">
+                        <a href="https://www.linkedin.com/in/jefferson-cassio/" alt="Jefferson's Linkedin Profile" target="_blank">
+                            <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M4 5.719C4 4.7695 4.789 4 5.7625 4H26.2375C27.211 4 28 4.7695 28 5.719V26.281C28 27.2305 27.211 28 26.2375 28H5.7625C4.789 28 4 27.2305 4 26.281V5.719ZM11.4145 24.091V13.2535H7.813V24.091H11.4145ZM9.6145 11.773C10.87 11.773 11.6515 10.942 11.6515 9.901C11.629 8.8375 10.8715 8.029 9.6385 8.029C8.4055 8.029 7.6 8.839 7.6 9.901C7.6 10.942 8.3815 11.773 9.5905 11.773H9.6145ZM16.9765 24.091V18.0385C16.9765 17.7145 17.0005 17.3905 17.0965 17.1595C17.356 16.513 17.9485 15.8425 18.9445 15.8425C20.248 15.8425 20.7685 16.8355 20.7685 18.2935V24.091H24.37V17.875C24.37 14.545 22.594 12.997 20.224 12.997C18.313 12.997 17.4565 14.047 16.9765 14.7865V14.824H16.9525C16.9605 14.8115 16.9685 14.7989 16.9765 14.7865V13.2535H13.3765C13.4215 14.2705 13.3765 24.091 13.3765 24.091H16.9765Z" fill="white"></path>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </footer>
+    </body>
+
+    <script src="./script.js"></script>
+
+</html>
